@@ -1,0 +1,25 @@
+/* Grid */
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(4, [col] 100px );
+}
+
+@for $i from 1 to 12 {
+    .col-$i {
+        grid-column: span $i;
+        border: 1px solid red;
+        height: 20px;
+    }
+}
+
+.logo {
+    grid-column: col 1 / span 2;
+}
+
+.main-nav {
+    grid-column: col 8 / span 12;
+}
