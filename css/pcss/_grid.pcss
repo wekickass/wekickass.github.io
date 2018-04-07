@@ -5,21 +5,30 @@
     margin: 0 auto;
     display: grid;
     grid-gap: 15px;
-    grid-template-columns: repeat(4, [col] 100px );
+    grid-template-columns: repeat(12, [col] 1fr);
 }
 
-@for $i from 1 to 12 {
-    .col-$i {
-        grid-column: span $i;
-        border: 1px solid red;
-        height: 20px;
+@for $i from 1 to 10 {
+    .aPush-$i {
+        margin-top: calc($i * 10)px;
+    }
+
+    .bPush-$i {
+        margin-bottom: calc($i * 10)px;
+    }
+
+    .col-offset-$i {
+        grid-column-start: $i;
     }
 }
 
-.logo {
-    grid-column: col 1 / span 2;
+@for $i from 1 to 12 {
+    .col-lg-start-$i {
+        grid-column-start: $i;
+    }
+
+    .col-lg-end-$i {
+        grid-column-end: calc($i + 1); /*Has sum to mimic span-like behaviour and also because it makes it easier for my brain */
+    }
 }
 
-.main-nav {
-    grid-column: col 8 / span 12;
-}

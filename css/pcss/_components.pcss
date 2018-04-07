@@ -14,12 +14,48 @@ header {
 }
 
 .main-nav {
-  font-size: .625rem;
+  font-size: .75rem;
   text-align: right;
+  & .button {
+    font-size: inherit;
+    font-family: "Avenir Next LT W01";
+    font-weight: 600;
+    &:hover {
+      color: black;
+      background-color: white;
+      text-decoration: none;
+    }
+  }
   & ul {
     margin-top: 14px;
     & li {
       display: inline;
+      margin-left: 30px;
+      & a {
+        color: #B1B1B1;
+        text-decoration: none;
+        transition: all 320ms ease-in-out;
+        &:hover {
+          text-decoration: underline;
+          color: var(--titleColor);
+        }
+      }
     }
+  }
+}
+
+button, .button {
+  transition: all 320ms ease-in-out;
+  background-color: transparent;
+  padding: 8px 20px;
+  border: 1px solid #DFDFDF;
+  color: #DFDFDF;
+  border-radius: 5px;
+  text-align: center;
+  font-size: .87rem;
+  font-weight: 600;
+  &:hover {
+    color: black;
+    background-color: white;
   }
 }
