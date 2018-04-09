@@ -44,6 +44,34 @@ header {
   }
 }
 
+footer {
+  padding: 20px 0;
+  font-size: .75rem;
+  font-weight: 600;
+  background-color: var(--overlayGray);
+}
+
+.footer-nav {
+  font-size: .75rem;
+  text-align: right;
+  & ul {
+    /*margin-top: 14px;*/
+    & li {
+      display: inline;
+      margin-left: 30px;
+      & a {
+        color: #B1B1B1;
+        text-decoration: none;
+        transition: all 320ms ease-in-out;
+        &:hover {
+          text-decoration: underline;
+          color: var(--titleColor);
+        }
+      }
+    }
+  }
+}
+
 button, .button {
   transition: all 320ms ease-in-out;
   background-color: transparent;
@@ -54,6 +82,7 @@ button, .button {
   text-align: center;
   font-size: .87rem;
   font-weight: 600;
+  text-decoration: none;
   &:hover {
     color: black;
     background-color: white;
