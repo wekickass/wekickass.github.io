@@ -4,10 +4,12 @@ header {
 }
 
 .logo {
-  background: transparent url('../img/logo.png') top left no-repeat;
+  background: transparent url('../img/logo.png') center left no-repeat;
   background-size: 100%;
   height: 36px;
   text-indent: -99999px;
+  grid-column-start: 1;
+  grid-column-end: 3;
   &:hover {
     background-image: url('../img/logo.gif');
   }
@@ -16,6 +18,8 @@ header {
 .main-nav {
   font-size: .75rem;
   text-align: right;
+  grid-column-start:8;
+  grid-column-end: 13;
   & .button {
     font-size: inherit;
     font-family: "Avenir Next LT W01";
@@ -29,6 +33,9 @@ header {
   & ul {
     margin-top: 14px;
     & li {
+      &:first-of-type {
+        margin-left: 0;
+      }
       display: inline;
       margin-left: 30px;
       & a {
@@ -70,7 +77,7 @@ footer {
   }
 }
 
-button, .button {
+.button {
   transition: all 320ms ease-in-out;
   background-color: transparent;
   padding: 8px 20px;
@@ -85,4 +92,11 @@ button, .button {
     color: black;
     background-color: white;
   }
+}
+
+.menu-button {
+  background-color: red;
+  padding: 20px;
+  text-indent: -99999px;
+  display: none;
 }

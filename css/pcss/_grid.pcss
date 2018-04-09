@@ -1,52 +1,83 @@
 /* Grid */
 
 .container {
-    max-width: 1280px;
-    margin: 0 auto;
-    display: grid;
-    grid-gap: 15px;
-    grid-template-columns: repeat(12, [col] 1fr);
-    grid-row-gap: 0;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(12, [col] 1fr);
+  grid-row-gap: 0;
 }
 
 @for $i from 1 to 10 {
-    .aPush-$i {
-        margin-top: calc($i * 10)px;
-    }
+  .aPush-$i {
+    margin-top: calc($i * 10)px;
+  }
 
-    .bPush-$i {
-        margin-bottom: calc($i * 10)px;
-    }
+  .bPush-$i {
+    margin-bottom: calc($i * 10)px;
+  }
 
-    .col-offset-$i {
-        grid-column-start: $i;
-    }
+  .col-offset-$i {
+    grid-column-start: $i;
+  }
 }
 
 @for $i from 1 to 12 {
-    .col-lg-start-$i {
-        grid-column-start: $i;
-    }
+  .col-lg-start-$i {
+    grid-column-start: $i;
+  }
 
-    .col-lg-end-$i {
-        grid-column-end: calc($i + 1); /*Has sum to mimic span-like behaviour and also because it makes it easier for my brain */
-    }
+  .col-lg-end-$i {
+    grid-column-end: calc($i + 1); /*Has sum to mimic span-like behaviour and also because it makes it easier for my brain */
+  }
 }
 
 @media screen and (orientation: portrait) {
-    .container {
-        max-width: 98%;
-        display: grid;
-        grid-gap: 0;
+  .container {
+    max-width: 90%;
+    display: grid;
+    grid-gap: 0;
+  }
+
+  @for $i from 1 to 12 {
+    .col-lg-start-$i {
+      grid-column-start: 1;
     }
 
-    @for $i from 1 to 12 {
-        .col-lg-start-$i {
-            grid-column-start: 1;
-        }
-
-        .col-lg-end-$i {
-            grid-column-end: 13;
-        }
+    .col-lg-end-$i {
+      grid-column-end: 13;
     }
+
+    .aPush-$i {
+      margin-top: calc($i * 5)px;
+    }
+
+    .bPush-$i {
+      margin-bottom: calc($i * 5)px;
+    }
+  }
+
+  .col-offset-$i {
+    grid-column-start: 1;
+  }
+
+  .logo {
+    background: transparent url('../img/crossbones.svg') center left no-repeat !important;
+    text-indent: -99999px;
+  }
+
+  .main-nav {
+    grid-column-start: 3 !important;
+    grid-column-end: 13 !important;
+    & ul {
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+    & li {
+      margin-left: 10px !important;
+      font-size: .625rem;
+    }
+  }
 }
