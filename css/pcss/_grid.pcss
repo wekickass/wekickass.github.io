@@ -33,3 +33,20 @@
     }
 }
 
+@media screen and (orientation: portrait) {
+    .container {
+        max-width: 98%;
+        display: grid;
+        grid-gap: 0;
+    }
+
+    @for $i from 1 to 12 {
+        .col-lg-start-$i {
+            grid-column-start: 1;
+        }
+
+        .col-lg-end-$i {
+            grid-column-end: 13;
+        }
+    }
+}

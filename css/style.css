@@ -300,6 +300,98 @@ table {
         grid-column-end: 13; /*Has sum to mimic span-like behaviour and also because it makes it easier for my brain */
     }
 
+@media screen and (orientation: portrait) {
+    .container {
+        max-width: 98%;
+        display: grid;
+        grid-gap: 0;
+    }
+        .col-lg-start-1 {
+            grid-column-start: 1;
+        }
+
+        .col-lg-end-1 {
+            grid-column-end: 13;
+        }
+        .col-lg-start-2 {
+            grid-column-start: 1;
+        }
+
+        .col-lg-end-2 {
+            grid-column-end: 13;
+        }
+        .col-lg-start-3 {
+            grid-column-start: 1;
+        }
+
+        .col-lg-end-3 {
+            grid-column-end: 13;
+        }
+        .col-lg-start-4 {
+            grid-column-start: 1;
+        }
+
+        .col-lg-end-4 {
+            grid-column-end: 13;
+        }
+        .col-lg-start-5 {
+            grid-column-start: 1;
+        }
+
+        .col-lg-end-5 {
+            grid-column-end: 13;
+        }
+        .col-lg-start-6 {
+            grid-column-start: 1;
+        }
+
+        .col-lg-end-6 {
+            grid-column-end: 13;
+        }
+        .col-lg-start-7 {
+            grid-column-start: 1;
+        }
+
+        .col-lg-end-7 {
+            grid-column-end: 13;
+        }
+        .col-lg-start-8 {
+            grid-column-start: 1;
+        }
+
+        .col-lg-end-8 {
+            grid-column-end: 13;
+        }
+        .col-lg-start-9 {
+            grid-column-start: 1;
+        }
+
+        .col-lg-end-9 {
+            grid-column-end: 13;
+        }
+        .col-lg-start-10 {
+            grid-column-start: 1;
+        }
+
+        .col-lg-end-10 {
+            grid-column-end: 13;
+        }
+        .col-lg-start-11 {
+            grid-column-start: 1;
+        }
+
+        .col-lg-end-11 {
+            grid-column-end: 13;
+        }
+        .col-lg-start-12 {
+            grid-column-start: 1;
+        }
+
+        .col-lg-end-12 {
+            grid-column-end: 13;
+        }
+}
+
 header {
   padding: 10px 0;
   background-color: #212121
@@ -365,22 +457,18 @@ footer {
   text-align: right
 }
 
-.footer-nav ul {/* margin-top: 14px;
-*/
-}
-
-.footer-nav ul li {
+.footer-nav li {
   display: inline;
   margin-left: 30px;
 }
 
-.footer-nav ul li a {
+.footer-nav li a {
   color: #B1B1B1;
   text-decoration: none;
   transition: all 320ms ease-in-out;
 }
 
-.footer-nav ul li a:hover {
+.footer-nav li a:hover {
   text-decoration: underline;
   color: #F1F1F1;
 }

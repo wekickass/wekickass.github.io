@@ -5,7 +5,6 @@ module.exports = {
     require('postcss-each'),
     require('postcss-css-variables'),
     require('postcss-conditionals'),
-    require('postcss-custom-properties'),
     require('postcss-calc'),
     require('postcss-nesting'),
     require('autoprefixer')
