@@ -625,7 +625,7 @@ footer {
   display: none;
 }
 
-.team-mate img {
+.team-mate img, .case-study img {
   width: 100%;
 }
 
