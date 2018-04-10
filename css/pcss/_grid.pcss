@@ -24,11 +24,11 @@
 }
 
 @for $i from 1 to 12 {
-  .col-lg-start-$i {
+  .col-start-$i {
     grid-column-start: $i;
   }
 
-  .col-lg-end-$i {
+  .col-end-$i {
     grid-column-end: calc($i + 1); /*Has sum to mimic span-like behaviour and also because it makes it easier for my brain */
   }
 }
@@ -41,11 +41,11 @@
   }
 
   @for $i from 1 to 12 {
-    .col-lg-start-$i {
+    .col-start-$i {
       grid-column-start: 1;
     }
 
-    .col-lg-end-$i {
+    .col-end-$i {
       grid-column-end: 13;
     }
 
