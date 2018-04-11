@@ -14,3 +14,6 @@ This is pretty much an static HTML + CSS website, except by the fact that I want
 1. Change the `.pcss` file
 2. Run `npm run css` on your terminal to run the scripts
 3. YAY!
+
+#### TODO:
+1. Proper media queries because now they're so poorly done, it has a ton of !importants and that is bad. 
