@@ -82,6 +82,8 @@ table {
   grid-gap: 15px;
   grid-template-columns: repeat(12, [col] 1fr);
   grid-row-gap: 0;
+  padding: 10px 0;
+  box-sizing: border-box;
 }
 
 .aPush-1 {
@@ -651,6 +653,10 @@ blockquote footer {
   background-color: transparent;
   font-size: 1.25rem;
   line-height: 1.56rem;
+}
+
+ul {
+  line-height: 2.26rem;
 }
 
 @font-face{
