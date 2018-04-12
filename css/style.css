@@ -509,6 +509,10 @@ table {
     grid-column-end: 13 !important
   }
 
+  .main-nav ul {
+    margin-top: 10px !important;
+  }
+
   .main-nav ul:first-child {
     margin-left: 0;
   }
@@ -563,6 +567,7 @@ header {
 
 .main-nav ul {
   margin-top: 14px;
+  line-height: 1.26rem;
 }
 
 .main-nav ul li:first-of-type {
@@ -597,6 +602,10 @@ footer {
   text-align: right;
   grid-column-start: 10;
   grid-column-end: 13
+}
+
+.footer-nav ul {
+  line-height: 1.26rem;
 }
 
 .footer-nav li {
@@ -729,6 +738,14 @@ ul {
     url("../fonts/ab1835cb-df6f-4d8d-b8ee-3075f5ba758d.svg#ab1835cb-df6f-4d8d-b8ee-3075f5ba758d") format("svg");
     font-weight: 700;
     font-style: italic;
+}
+
+i {
+    font-style: italic;
+}
+
+b, em {
+    font-weight: bold;
 }
 
 h1 {
