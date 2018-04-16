@@ -15,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
   <header>
@@ -30,20 +31,20 @@
     </div>
   </header>
   <section id="hero">
-    <div class="container">
+    <div class="container animate-0">
       <h1 class="col-start-1 col-end-6 aPush-10">Rivur</h1>
     </div>
   </section>
   <section id="summary">
     <div class="container">
-      <h2 class="col-start-2 col-end-8 aPush-10">Control the flow of capital.</h2>
-      <p class="col-start-2 col-end-9 aPush-2"><a href="http://rivur.com" target="_blank">http://rivur.com</a></p>
-      <div class="col-start-2 col-end-8 aPush-10 bPush-10" data-project="summary">
+      <h2 class="col-start-2 col-end-8 aPush-6 animate hidden">Control the flow of capital.</h2>
+      <p class="col-start-2 col-end-9 aPush-2 animate hidden"><a href="http://rivur.com" target="_blank">http://rivur.com</a></p>
+      <div class="col-start-2 col-end-8 aPush-10 bPush-10 animate hidden" data-project="summary">
         <h3>Project Summary</h3>
         <p class="aPush-2">Rivur enforces business rules providing confidence that approvals or other partnership or lending obligations are being properly managed and recorded.</p>
       </div>
 
-      <div class="col-start-9 col-end-11 aPush-10 bPush-6" data-project="services">
+      <div class="col-start-9 col-end-11 aPush-10 bPush-6 animate hidden" data-project="services">
         <h3>Services</h3>
         <ul class="aPush-2">
           <li>CTO-level advisory</li>
@@ -59,14 +60,14 @@
 
   <section id="gallery">
     <div class="container case-study">
-      <img class="col-start-2 col-end-11" src="img/studies/rivur/01.png">
-      <img class="col-start-2 col-end-11 aPush-2" src="img/studies/rivur/02.png">
-      <blockquote class="col-start-2 col-end-11 aPush-10 bPush-8">"Obie and his team were instrumental in building a lean, scalable, and modern platform that allowed us to be more competitive in the marketplace, with minimal disruption to our existing userbase. We consider them true technology partners."
+      <img class="col-start-2 col-end-11 animate animate hidden" src="img/studies/rivur/01.png">
+      <img class="col-start-2 col-end-11 aPush-2 animate hidden" src="img/studies/rivur/02.png">
+      <blockquote class="col-start-2 col-end-11 aPush-10 bPush-8 animate hidden">"Obie and his team were instrumental in building a lean, scalable, and modern platform that allowed us to be more competitive in the marketplace, with minimal disruption to our existing userbase. We consider them true technology partners."
         <footer>
           — Brent Hard, Rivur CEO
         </footer>
       </blockquote>
-      <img class="col-start-2 col-end-11 bPush-10" src="img/studies/rivur/03.png">
+      <img class="col-start-2 col-end-11 bPush-10 animate hidden" src="img/studies/rivur/03.png">
     </div>
     
   </section>
@@ -84,5 +85,6 @@
       <p class="col-start-1 col-end-3"><a href="/contact.html">contact@kickass.partners</a></p>
     </div>
   </footer>
+  <script type="text/javascript" src="js/animate.js"></script>
 </body>
 </html>

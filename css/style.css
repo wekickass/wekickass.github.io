@@ -93,39 +93,31 @@ table {
   }
 }
 
+@-webkit-keyframes delayTop {
+  0% { opacity: 0; padding-top: 50px }
+  50% { opacity: 0; }
+  70%  { opacity: 1; padding-top: 0 }
+}
+
+@keyframes delayTop {
+  0% { opacity: 0; padding-top: 50px }
+  50% { opacity: 0; }
+  70%  { opacity: 1; padding-top: 0 }
+}
+
 .animate-0 {
   -webkit-animation: slideTop 3s 0s 1;
           animation: slideTop 3s 0s 1;
 }
 
+.animate-1 {
+  -webkit-animation: delayTop 3s 1s 1;
+          animation: delayTop 3s 1s 1;
+}
+
 .hidden {
   opacity: 0;
 }
-
-.animate-1 {
-    -webkit-animation: slideTop 630ms 111ms 1;
-            animation: slideTop 630ms 111ms 1; 
-  }
-
-.animate-2 {
-    -webkit-animation: slideTop 630ms 112ms 1;
-            animation: slideTop 630ms 112ms 1; 
-  }
-
-.animate-3 {
-    -webkit-animation: slideTop 630ms 113ms 1;
-            animation: slideTop 630ms 113ms 1; 
-  }
-
-.animate-4 {
-    -webkit-animation: slideTop 630ms 114ms 1;
-            animation: slideTop 630ms 114ms 1; 
-  }
-
-.animate-5 {
-    -webkit-animation: slideTop 630ms 115ms 1;
-            animation: slideTop 630ms 115ms 1; 
-  }
 
 /* Grid */
 

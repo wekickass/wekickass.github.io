@@ -8,16 +8,20 @@
   }
 }
 
+@keyframes delayTop {
+  0% { opacity: 0; padding-top: 50px }
+  50% { opacity: 0; }
+  70%  { opacity: 1; padding-top: 0 }
+}
+
 .animate-0 {
   animation: slideTop 3s 0s 1;
 }
 
-.hidden {
-  opacity: 0;
+.animate-1 {
+  animation: delayTop 3s 1s 1;
 }
 
-@for $i from 1 to 5 {
-  .animate-$i {
-    animation: slideTop 630ms calc(110 + $i)ms 1; 
-  }
+.hidden {
+  opacity: 0;
 }
