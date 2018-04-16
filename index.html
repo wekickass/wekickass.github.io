@@ -10,6 +10,9 @@
 
     gtag('config', 'UA-117358612-1');
   </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="//unpkg.com/jscroll/dist/jquery.jscroll.min.js"></script>
+
   <title>Kickass Partners</title>
   <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -30,40 +33,40 @@
   </header>
   <section id="hero">
     <div class="container">
-      <h1 class="hero-text col-start-1 col-end-6 aPush-10 bPush-10">We create products that solve real problems, look good and are easy to get up and running with your users.</h1>
+      <h1 class="hero-text col-start-1 col-end-7 aPush-10 bPush-10 animate animate-0">We create products that solve real problems, look good and are easy to get up and running with your users.</h1>
     </div>
   </section>
   <section id="info">
     <div class="container">
-        <h2 class="col-start-2 col-end-5 aPush-10">A comprehensive tech partnership for your startup.</h2>
-        <p class="col-start-2 col-end-7 aPush-2">We are an <a href="/about.html"> elite team of designers and engineers</a> specializing in custom web application development and maintenance. Our specialty is helping startups to maximize the impact of limited budgets.</p>
-        <p class="col-start-2 col-end-6 aPush-4"><a href="#" class="button">See our work</a>
+        <h2 class="col-start-2 col-end-5 aPush-10 animate hidden">A comprehensive tech partnership for your startup.</h2>
+        <p class="col-start-2 col-end-7 aPush-2 animate hidden">We are an <a href="/about.html"> elite team of designers and engineers</a> specializing in custom web application development and maintenance. Our specialty is helping startups to maximize the impact of limited budgets.</p>
+        <p class="col-start-2 col-end-6 aPush-4 animate hidden"><a href="/studies.html" class="button">See our work</a>
     </div>
   </section>
   <section id="benefits">
     <div class="container">
-      <div class="col-start-2 col-end-4">
+      <div class="col-start-2 col-end-4 animate hidden">
         <img class="benefit-icon aPush-10 bPush-2" src="/img/trs.svg"/>
         <h2>Trust</h2>
-        <p class="aPush-2">How do you know that your product is working and doing the right thing? We’ll make sure that decisions that need to be made post-launch are informed by actual facts of user behavior, not just best guesses.</p>
+        <p class="benefit aPush-2 ">How do you know that your product is working and doing the right thing? We’ll make sure that decisions that need to be made post-launch are informed by actual facts of user behavior, not just best guesses.</p>
       </div>
-      <div class="col-start-6 col-end-8">
+      <div class="col-start-6 col-end-8 animate hidden">
         <img class="benefit-icon aPush-10 bPush-2" src="/img/spd.svg"/>
         <h2>Velocity</h2>
-        <p class="aPush-2">We're not just fast, we know where we're going. Our depth of product experience gives us the ability to create early release versions of products quickly, based on little more than some initial product discussions.</p>
+        <p class="benefit aPush-2">We're not just fast, we know where we're going. Our depth of product experience gives us the ability to create early release versions of products quickly, based on little more than some initial product discussions.</p>
       </div>
-      <div class="col-start-10 col-end-12">
+      <div class="col-start-10 col-end-12 animate hidden">
         <img class="benefit-icon aPush-10 bPush-2" src="/img/str.svg"/>
         <h2>Strength</h2>
-        <p class="aPush-2 bPush-6">You’ll rest easy at night, knowing that the proper amount of automated test coverage is in place and protecting your product from unintentional breakage.</p>
+        <p class="benefit aPush-2 bPush-6">You’ll rest easy at night, knowing that the proper amount of automated test coverage is in place and protecting your product from unintentional breakage.</p>
       </div>
     </div>
   </section>
   <section id="about">
     <div class="container">
-      <h2 class="col-start-2 col-end-5 aPush-10">Our Engagement Model</h2>
-      <p class="col-start-2 col-end-9 aPush-2">
-        We are essentially a boutique agency and operate strictly on a retainer basis, very similar to the way you would hire a high-caliber law firm. The first step is to hiring us is to set up a phone call or video conference with our founder Obie Fernandez in order to discuss your needs and explore whether we’d make a good fit for your particular situation. If you already have some technology in place for your product, we may decide to start off with an audit, which generally costs around a thousand dollars. After that we would figure out initial estimates, figure out a schedule that works for your need, and contract the relationship using a retained services agreement. We keep formal project management activities to a minimum, relying on tools like Zenhub and Github Issues to do Kanban-style organization of work. Depending on the scope of your retainer, you can expect to be in communication with our staff anywhere from a couple times a week to a continual basis, mostly via Slack.
+      <h2 class="col-start-2 col-end-5 aPush-10 animate hidden">Our Engagement Model</h2>
+      <p class="col-start-2 col-end-8 aPush-2 animate hidden">
+        The first step is to hiring us is to set up a phone call or video conference with our founder Obie Fernandez in order to discuss your needs and explore whether we’d make a good fit for your particular situation. If you already have some technology in place for your product, we may decide to start off with an audit. After that we would figure out initial estimates, a schedule that works for your need, and contract the relationship using a retained services agreement.
       </p>
     </div>
   </section>
@@ -87,5 +90,8 @@
       <p class="col-start-1 col-end-3"><a href="/contact.html">contact@kickass.partners</a></p>
     </div>
   </footer>
+
+  <script src="js/animate.js"></script>
+
 </body>
 </html>

@@ -74,6 +74,18 @@
     color: red;
   }
 
+  .hero-text {
+    &:before {
+      background: transparent url('../img/logo.png') center left no-repeat;
+      background-size: 100%;
+      width: 120px;
+      height: 10px;
+      content: "";
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
   .main-nav {
     grid-column-start: 3 !important;
     grid-column-end: 13 !important;

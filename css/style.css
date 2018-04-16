@@ -17,7 +17,6 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
-  padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
@@ -32,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-  line-height: 1;
+  line-height: 1.26;
 }
 
 ol, ul {
@@ -72,6 +71,60 @@ table {
   border: 1px solid red;
   height: 20px;
 }
+
+@-webkit-keyframes slideTop {
+  from {
+    padding-top: 50px;
+    opacity: 0;
+  } to {
+    padding-top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  from {
+    padding-top: 50px;
+    opacity: 0;
+  } to {
+    padding-top: 0;
+    opacity: 1;
+  }
+}
+
+.animate-0 {
+  -webkit-animation: slideTop 3s 0s 1;
+          animation: slideTop 3s 0s 1;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.animate-1 {
+    -webkit-animation: slideTop 630ms 111ms 1;
+            animation: slideTop 630ms 111ms 1; 
+  }
+
+.animate-2 {
+    -webkit-animation: slideTop 630ms 112ms 1;
+            animation: slideTop 630ms 112ms 1; 
+  }
+
+.animate-3 {
+    -webkit-animation: slideTop 630ms 113ms 1;
+            animation: slideTop 630ms 113ms 1; 
+  }
+
+.animate-4 {
+    -webkit-animation: slideTop 630ms 114ms 1;
+            animation: slideTop 630ms 114ms 1; 
+  }
+
+.animate-5 {
+    -webkit-animation: slideTop 630ms 115ms 1;
+            animation: slideTop 630ms 115ms 1; 
+  }
 
 /* Grid */
 
@@ -504,6 +557,16 @@ table {
     color: red;
   }
 
+  .hero-text:before {
+    background: transparent url('../img/logo.png') center left no-repeat;
+    background-size: 100%;
+    width: 120px;
+    height: 10px;
+    content: "";
+    display: block;
+    margin-bottom: 20px;
+  }
+
   .main-nav {
     grid-column-start: 3 !important;
     grid-column-end: 13 !important
@@ -549,8 +612,9 @@ header {
 .main-nav {
   font-size: .75rem;
   text-align: right;
-  grid-column-start:8;
-  grid-column-end: 13
+  grid-column-start: 8;
+  grid-column-end: 13;
+  font-weight: 700
 }
 
 .main-nav .button {
