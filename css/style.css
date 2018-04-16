@@ -697,6 +697,11 @@ footer {
   display: none;
 }
 
+.team-mate img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
 .team-mate img, .case-study img {
   width: 100%;
 }
