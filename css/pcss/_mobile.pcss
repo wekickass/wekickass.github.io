@@ -1,0 +1,71 @@
+@media only screen and (min-width:  320px) and (orientation: portrait){
+  .container {
+    max-width: 90%;
+    display: grid;
+    grid-gap: 0;
+  }
+
+  @for $i from 1 to 12 {
+    .col-start-$i {
+      grid-column-start: 1;
+    }
+
+    .col-end-$i {
+      grid-column-end: 13;
+    }
+
+    .aPush-$i {
+      margin-top: calc($i * 5)px;
+    }
+
+    .bPush-$i {
+      margin-bottom: calc($i * 5)px;
+    }
+  }
+
+  .col-offset-$i {
+    grid-column-start: 1;
+  }
+
+  .logo {
+    background: transparent url('../img/crossbones.svg') center left no-repeat !important;
+    text-indent: -99999px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    line-height: 2.26rem;
+    color: red;
+  }
+
+  .hero-text {
+    &:before {
+      background: transparent url('../img/logo.png') center left no-repeat;
+      background-size: 100%;
+      width: 220px;
+      height: 30px;
+      content: "";
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  .main-nav {
+    grid-column-start: 3;
+    grid-column-end: 13;
+    & ul {
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+    & li {
+      margin-left: 10px;
+      font-size: .625rem;
+    }
+  }
+
+  .footer-nav {
+    grid-column-start: 3;
+    grid-column-end: 13;
+  }
+}

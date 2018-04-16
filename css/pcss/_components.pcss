@@ -18,7 +18,7 @@ header {
 .main-nav {
   font-size: .75rem;
   text-align: right;
-  grid-column-start: 8;
+  grid-column-start: 3;
   grid-column-end: 13;
   font-weight: 700;
   & .button {
@@ -32,8 +32,6 @@ header {
     }
   }
   & ul {
-    margin-top: 14px;
-    line-height: 1.26rem;
     & li {
       &:first-of-type {
         margin-left: 0;
@@ -63,7 +61,7 @@ footer {
 .footer-nav {
   font-size: .75rem;
   text-align: right;
-  grid-column-start: 10;
+  grid-column-start: 6;
   grid-column-end: 13;
   
   & ul {
@@ -126,4 +124,31 @@ blockquote {
 
 ul {
   line-height: 2.26rem;
+}
+
+.home {
+  & #hero {
+    position: relative;
+    background: transparent url('../img/hero.png') bottom center no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    &:after {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border: 1px solid rgba(255, 255, 255, .1);
+      border-bottom: 0;
+      background: linear-gradient(-40deg, black 50%, black 0%, transparent 50%);
+      background-origin: border-box;
+      z-index: 1;
+    }
+    & > div {
+      z-index: 10;
+      position: relative;
+    }
+  }
 }

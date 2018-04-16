@@ -18,6 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
   border: 0;
+  padding: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -129,7 +130,7 @@ table {
 /* Grid */
 
 .container {
-  max-width: 1280px;
+  max-width: 1080px;
   margin: 0 auto;
   display: grid;
   grid-gap: 15px;
@@ -355,7 +356,7 @@ table {
     grid-column-end: 13; /*Has sum to mimic span-like behaviour and also because it makes it easier for my brain */
   }
 
-@media only screen and (orientation: portrait){
+@media only screen and (min-width:  320px) and (orientation: portrait){
   .container {
     max-width: 90%;
     display: grid;
@@ -552,28 +553,24 @@ table {
   }
 
   h1 {
-    font-size: 2rem !important;
-    line-height: 2.26rem !important;
+    font-size: 2rem;
+    line-height: 2.26rem;
     color: red;
   }
 
   .hero-text:before {
     background: transparent url('../img/logo.png') center left no-repeat;
     background-size: 100%;
-    width: 120px;
-    height: 10px;
+    width: 220px;
+    height: 30px;
     content: "";
     display: block;
     margin-bottom: 20px;
   }
 
   .main-nav {
-    grid-column-start: 3 !important;
-    grid-column-end: 13 !important
-  }
-
-  .main-nav ul {
-    margin-top: 10px !important;
+    grid-column-start: 3;
+    grid-column-end: 13
   }
 
   .main-nav ul:first-child {
@@ -581,13 +578,13 @@ table {
   }
 
   .main-nav li {
-    margin-left: 10px !important;
+    margin-left: 10px;
     font-size: .625rem;
   }
 
   .footer-nav {
-    grid-column-start: 3 !important;
-    grid-column-end: 13 !important;
+    grid-column-start: 3;
+    grid-column-end: 13;
   }
 }
 
@@ -612,7 +609,7 @@ header {
 .main-nav {
   font-size: .75rem;
   text-align: right;
-  grid-column-start: 8;
+  grid-column-start: 3;
   grid-column-end: 13;
   font-weight: 700
 }
@@ -627,11 +624,6 @@ header {
   color: black;
   background-color: white;
   text-decoration: none;
-}
-
-.main-nav ul {
-  margin-top: 14px;
-  line-height: 1.26rem;
 }
 
 .main-nav ul li:first-of-type {
@@ -664,7 +656,7 @@ footer {
 .footer-nav {
   font-size: .75rem;
   text-align: right;
-  grid-column-start: 10;
+  grid-column-start: 6;
   grid-column-end: 13
 }
 
@@ -730,6 +722,34 @@ blockquote footer {
 
 ul {
   line-height: 2.26rem;
+}
+
+.home #hero {
+  position: relative;
+  background: transparent url('../img/hero.png') bottom center no-repeat;
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.home #hero:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px solid rgba(255, 255, 255, .1);
+  border-bottom: 0;
+  background: linear-gradient(-40deg, black 50%, black 0%, transparent 50%);
+  background-origin: border-box;
+  z-index: 1;
+}
+
+.home #hero > div {
+  z-index: 10;
+  position: relative;
 }
 
 @font-face{

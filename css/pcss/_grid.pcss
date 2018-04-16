@@ -1,6 +1,7 @@
+
 /* Grid */
 .container {
-  max-width: 1280px;
+  max-width: 1080px;
   margin: 0 auto;
   display: grid;
   grid-gap: 15px;
@@ -31,78 +32,5 @@
 
   .col-end-$i {
     grid-column-end: calc($i + 1); /*Has sum to mimic span-like behaviour and also because it makes it easier for my brain */
-  }
-}
-
-@media only screen and (orientation: portrait){
-  .container {
-    max-width: 90%;
-    display: grid;
-    grid-gap: 0;
-  }
-
-  @for $i from 1 to 12 {
-    .col-start-$i {
-      grid-column-start: 1;
-    }
-
-    .col-end-$i {
-      grid-column-end: 13;
-    }
-
-    .aPush-$i {
-      margin-top: calc($i * 5)px;
-    }
-
-    .bPush-$i {
-      margin-bottom: calc($i * 5)px;
-    }
-  }
-
-  .col-offset-$i {
-    grid-column-start: 1;
-  }
-
-  .logo {
-    background: transparent url('../img/crossbones.svg') center left no-repeat !important;
-    text-indent: -99999px;
-  }
-
-  h1 {
-    font-size: 2rem !important;
-    line-height: 2.26rem !important;
-    color: red;
-  }
-
-  .hero-text {
-    &:before {
-      background: transparent url('../img/logo.png') center left no-repeat;
-      background-size: 100%;
-      width: 120px;
-      height: 10px;
-      content: "";
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
-
-  .main-nav {
-    grid-column-start: 3 !important;
-    grid-column-end: 13 !important;
-    & ul {
-      margin-top: 10px !important;
-      &:first-child {
-        margin-left: 0;
-      }
-    }
-    & li {
-      margin-left: 10px !important;
-      font-size: .625rem;
-    }
-  }
-
-  .footer-nav {
-    grid-column-start: 3 !important;
-    grid-column-end: 13 !important;
   }
 }
