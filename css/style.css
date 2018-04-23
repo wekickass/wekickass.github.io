@@ -704,6 +704,11 @@ footer {
 
 .team-mate img, .case-study img {
   width: 100%;
+  cursor: url('../img/01.png'), auto;
+}
+
+.team-mate img:hover, .case-study img:hover {
+  cursor: url('../img/01.png'), auto;
 }
 
 blockquote {
