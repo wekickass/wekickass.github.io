@@ -62,7 +62,6 @@ table {
   font-size: 1em;
   line-height: 1.26em;
 
-  background-color: #000;
   color: #B3B3B3;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -580,9 +579,12 @@ table {
   }
 }
 
+body {
+  background-color: #000;
+}
+
 header {
   padding: 10px 0;
-  background-color: #212121
 }
 
 .logo {
@@ -596,6 +598,15 @@ header {
 
 .logo:hover {
   background-image: url('../img/logo.gif');
+}
+
+.alt-logo {
+  background: transparent url('../img/alt-logo.svg') center left no-repeat;
+  background-size: 100%;
+  height: 36px;
+  text-indent: -99999px;
+  grid-column-start: 5;
+  grid-column-end: 9;
 }
 
 .main-nav {
@@ -642,7 +653,6 @@ footer {
   padding: 20px 0;
   font-size: .75rem;
   font-weight: 600;
-  background-color: #212121;
 }
 
 .footer-nav {
@@ -697,18 +707,12 @@ footer {
   display: none;
 }
 
-.team-mate img {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+.team-mate img:hover {
+  cursor: url('../img/01.png'), auto;
 }
 
 .team-mate img, .case-study img {
   width: 100%;
-  cursor: url('../img/01.png'), auto;
-}
-
-.team-mate img:hover, .case-study img:hover {
-  cursor: url('../img/01.png'), auto;
 }
 
 blockquote {
@@ -752,6 +756,61 @@ ul {
 .home #hero > div {
   z-index: 10;
   position: relative;
+}
+
+.category {
+  position: relative;
+  z-index: 1
+}
+
+.category img {
+  width: 100%;
+}
+
+.category .category--music {
+  background: transparent url('../img/music.png') top left no-repeat;
+  height: 210px;
+}
+
+.category .category--music:hover {
+  background-image: url('../img/music-color.png');
+}
+
+.category .category--music:after {
+  content: "MUSIC";
+  position: absolute;
+  z-index: 10;
+  top: 33%;
+  left: 40%;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.category .category--software {
+  background: transparent url('../img/software.png') top left no-repeat;
+  height: 210px;
+}
+
+.category .category--software:hover {
+  background-image: url('../img/software-color.png');
+}
+
+.category .category--software:after {
+  content: "SOFTWARE";
+  position: absolute;
+  z-index: 10;
+  top: 33%;
+  left: 40%;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.absolute {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
 }
 
 @font-face{
@@ -873,9 +932,5 @@ p {
 
 a {
     color: white;
-    text-decoration: underline
-}
-
-a:hover {/* I'll be back :D
-*/
+    text-decoration: underline;
 }

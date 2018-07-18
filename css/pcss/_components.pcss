@@ -1,6 +1,9 @@
+body {
+  background-color: #000;
+}
+
 header {
   padding: 10px 0;
-  background-color: var(--overlayGray)
 }
 
 .logo {
@@ -13,6 +16,15 @@ header {
   &:hover {
     background-image: url('../img/logo.gif');
   }
+}
+
+.alt-logo {
+  background: transparent url('../img/alt-logo.svg') center left no-repeat;
+  background-size: 100%;
+  height: 36px;
+  text-indent: -99999px;
+  grid-column-start: 5;
+  grid-column-end: 9;
 }
 
 .main-nav {
@@ -55,7 +67,6 @@ footer {
   padding: 20px 0;
   font-size: .75rem;
   font-weight: 600;
-  background-color: var(--overlayGray);
 }
 
 .footer-nav {
@@ -157,4 +168,52 @@ ul {
       position: relative;
     }
   }
+}
+
+.category {
+  position: relative;
+  z-index: 1;
+  & img {
+    width: 100%;
+  }
+  & .category--music {
+    background: transparent url('../img/music.png') top left no-repeat;
+    height: 210px;
+    &:hover {
+      background-image: url('../img/music-color.png');
+    }
+    &:after {
+      content: "MUSIC";
+      position: absolute;
+      z-index: 10;
+      top: 33%;
+      left: 40%;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+  & .category--software {
+    background: transparent url('../img/software.png') top left no-repeat;
+    height: 210px;
+    &:hover {
+      background-image: url('../img/software-color.png');
+    }
+    &:after {
+      content: "SOFTWARE";
+      position: absolute;
+      z-index: 10;
+      top: 33%;
+      left: 40%;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+}
+
+.absolute {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
 }
