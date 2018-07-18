@@ -760,51 +760,46 @@ ul {
 
 .category {
   position: relative;
-  z-index: 1
+  z-index: 1;
+  text-align: center
+}
+
+.category p {
+  text-align: left;
+}
+
+.category a {
+  text-decoration: none;
+}
+
+.category h2 {
+  text-transform: uppercase;
 }
 
 .category img {
   width: 100%;
 }
 
-.category .category--music {
+.category--music {
   background: transparent url('../img/music.png') top left no-repeat;
-  height: 210px;
+  background-size: cover;
+  height: 50vh;
+  max-height: 450px
 }
 
-.category .category--music:hover {
+.category--music:hover {
   background-image: url('../img/music-color.png');
 }
 
-.category .category--music:after {
-  content: "MUSIC";
-  position: absolute;
-  z-index: 10;
-  top: 33%;
-  left: 40%;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.category .category--software {
+.category--software {
   background: transparent url('../img/software.png') top left no-repeat;
-  height: 210px;
+  background-size: cover;
+  height: 50vh;
+  max-height: 450px
 }
 
-.category .category--software:hover {
+.category--software:hover {
   background-image: url('../img/software-color.png');
-}
-
-.category .category--software:after {
-  content: "SOFTWARE";
-  position: absolute;
-  z-index: 10;
-  top: 33%;
-  left: 40%;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
 }
 
 .absolute {
@@ -933,4 +928,42 @@ p {
 a {
     color: white;
     text-decoration: underline;
+}
+
+@media only screen and (min-width: 62em){
+  .category:first-of-type {
+    padding: 0;
+    -webkit-clip-path: polygon(0 0, 100% 0,85% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0,85% 100%, 0 100%);
+  }
+  .category:first-of-type p {
+    padding-right: 80px;
+  }
+  .category:last-of-type {
+    padding: 0;
+    -webkit-clip-path: polygon(15% 0,100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(15% 0,100% 0, 100% 100%, 0 100%);
+  }
+  .category:last-of-type p {
+    padding-left: 40px;
+  }
+}
+
+@media only screen and (min-width: 75em){
+  .category:first-of-type {
+    padding: 0;
+    -webkit-clip-path: polygon(0 0, 100% 0,85% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0,85% 100%, 0 100%);
+  }
+  .category:first-of-type p {
+    padding-right: 80px;
+  }
+  .category:last-of-type {
+    padding: 0;
+    -webkit-clip-path: polygon(15% 0,100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(15% 0,100% 0, 100% 100%, 0 100%);
+  }
+  .category:last-of-type p {
+    padding-left: 40px;
+  }
 }

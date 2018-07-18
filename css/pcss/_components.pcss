@@ -173,42 +173,37 @@ ul {
 .category {
   position: relative;
   z-index: 1;
+  text-align: center;
+  & p {
+    text-align: left;
+  }
+  & a {
+    text-decoration: none;
+  }
+  & h2 {
+    text-transform: uppercase;
+  }
   & img {
     width: 100%;
   }
-  & .category--music {
-    background: transparent url('../img/music.png') top left no-repeat;
-    height: 210px;
-    &:hover {
-      background-image: url('../img/music-color.png');
-    }
-    &:after {
-      content: "MUSIC";
-      position: absolute;
-      z-index: 10;
-      top: 33%;
-      left: 40%;
-      color: white;
-      font-weight: bold;
-      font-size: 20px;
-    }
+}
+
+.category--music {
+  background: transparent url('../img/music.png') top left no-repeat;
+  background-size: cover;
+  height: 50vh;
+  max-height: 450px;
+  &:hover {
+    background-image: url('../img/music-color.png');
   }
-  & .category--software {
-    background: transparent url('../img/software.png') top left no-repeat;
-    height: 210px;
-    &:hover {
-      background-image: url('../img/software-color.png');
-    }
-    &:after {
-      content: "SOFTWARE";
-      position: absolute;
-      z-index: 10;
-      top: 33%;
-      left: 40%;
-      color: white;
-      font-weight: bold;
-      font-size: 20px;
-    }
+}
+.category--software {
+  background: transparent url('../img/software.png') top left no-repeat;
+  background-size: cover;
+  height: 50vh;
+  max-height: 450px;
+  &:hover {
+    background-image: url('../img/software-color.png');
   }
 }
 
